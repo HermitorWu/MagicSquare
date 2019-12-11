@@ -1,15 +1,10 @@
 """
-可以正確執行。但輸出還沒格式化，不夠整齊美觀。
+《資料結構Python蔡明志》
+可以正確執行。控制台輸出已經格式化。
 """
 
 
-def step():
-    pass
-
-
 def main():
-    print("b\n")
-
     square = [[0] * 5 for i in range(5)]
 
     square[0][2] = 1
@@ -43,10 +38,14 @@ def main():
             print("[", i, "][", j, "]=", square[i][j])
             num += 1
 
+    print("")  # 換行
+
     for m in range(5):
         for n in range(5):
-            print(square[m][n], end=" ")
+            print('%2s' % square[m][n], end="  ")
         print("\n")
+
+    print("version: e\n")
 
 
 if __name__ == '__main__':
