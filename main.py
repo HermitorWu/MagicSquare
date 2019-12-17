@@ -23,7 +23,7 @@ def main():
 
         if square[i][j] == 0:
             square[i][j] = num + 1
-            print("[", i, "][", j, "]=", square[i][j])
+            print("[", i, "][", j, "] =", square[i][j])
             num += 1
         else:
             i += 2
@@ -35,7 +35,7 @@ def main():
                 j = j - 5
 
             square[i][j] = num + 1
-            print("[", i, "][", j, "]=", square[i][j])
+            print("[", i, "][", j, "] =", square[i][j])
             num += 1
 
     print("")  # 換行
